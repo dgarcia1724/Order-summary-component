@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-image: url(images/pattern-background-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  font-size: 1.6rem;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 90%;
+  max-width: 40rem;
+  background-color: white;
+
+  border-radius: 18px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+}
+
+/* Under image */
+
+.card > div {
+  padding: 2.4rem 1.4rem;
+}
+
+.card h1 {
+  margin-bottom: 1.2rem;
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.card > div > p {
+  margin-bottom: 2rem;
+  color: hsl(224, 23%, 55%);
+}
+
+.Annual-Plan {
+  margin-bottom: 1.6rem;
+  padding: 1.6rem;
+  background-color: hsl(225, 100%, 98%);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 14px;
+
+  font-size: 1.2rem;
+}
+
+.Annual-Plan img {
+  width: 4rem;
+}
+
+.annual-btn {
+  margin-right: 3.2rem;
+}
+
+.annual-btn span {
+  line-height: 1.5;
+  font-weight: 900;
+}
+
+.Annual-Plan > a {
+  display: inline-block;
+  color: hsl(245, 75%, 52%);
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.Annual-Plan > a:active {
+  color: hsl(255, 75%, 52%);
+  text-decoration: none;
+}
+
+.outside-button {
+  margin-bottom: 1.6rem;
+  display: inline-block;
+  width: 100%;
+
+  padding: 1.2rem;
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+  border-radius: 14px;
+
+  font-size: 1.4rem;
+
+  text-decoration: none;
+}
+
+.outside-button:active {
+  background-color: hsl(255, 75%, 52%);
+  text-decoration: none;
+}
+
+.bottom-button {
+  display: inline-block;
+
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: hsl(224, 23%, 55%);
+}
+
+.bottom-button:active {
+  color: black;
+}
+
+/******* RESPONSIVE  ********/
+
+@media (min-width: 500px) {
+  body {
+    background-image: url(images/pattern-background-desktop.svg);
+  }
+
+  .card > div {
+    padding: 4.8rem 3.2rem;
+  }
+}
